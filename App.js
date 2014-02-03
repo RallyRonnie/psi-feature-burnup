@@ -58,7 +58,7 @@ Ext.define('CustomApp', {
     wsapiQuery : function( config , callback ) {
         Ext.create('Rally.data.WsapiDataStore', {
             autoLoad : true,
-            limit : "infinity",
+            limit : "Infinity",
             model : config.model,
             fetch : config.fetch,
             filters : config.filters,
@@ -328,6 +328,7 @@ Ext.define('CustomApp', {
 
             chartConfig : {
                 chart: {
+                    zoomType: 'x'
                 },
                 title: {
                 text: 'PSI Feature Burnup',
